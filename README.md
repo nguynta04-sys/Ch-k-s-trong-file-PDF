@@ -52,4 +52,30 @@ lưu/truy xuất chữ ký.
 - em vào trang này để download Openssl https://slproweb.com/products/Win32OpenSSL.html
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/039c4f17-79c4-4254-a928-3f624db4fc97" />
 
-- Em làm trước được 1 file pdf gốc
+- Em làm trước được 1 file pdf gốc:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/01c257b9-20a5-47d8-be19-65aecc4f791d" />
+
+- Em tạo mycert.pem và mykey.pem sử dụng Openssl để tạo chứng chỉ và khóa em được 2 file:
+<img width="355" height="53" alt="image" src="https://github.com/user-attachments/assets/c2f33286-299d-4f22-879b-a46294291533" />
+
+- Em tự kí trước 1 ảnh chữ kí của em:
+<img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/1a008824-bae5-4ae4-92a1-a6273ef3391a" />
+
+- Em tạo 1 file chukiso.py với cấu hình như sau:
+- PDF_INPUT : chukiso.pdf
+- PDF_OUTPUT: signed_output.pdf
+- SIGN_IMAGE: signature.png
+- PRIVATE_KEY: mykey.pem
+- CERT_FILE: mycert.pem
+
+-  Sau khi em chạy code .py, chữ kí từ ảnh png sẽ được đưa ra file chukiso.pdf và cho ra file signed_output.pdf đã được kí:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a41d505b-caa8-4595-a615-aa7ad19d4d72" />
+
+- Em tạo 1 file .py nữa để kiểm tra xác thực chữ kí:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1d00eddc-2e53-40b5-9390-364c46bd5742" />
+
+- Sau khi em chạy file: verify_log.py, xong sau đó sẽ tạo ra 1 file: verify_log.txt để hiển thị kết quả kiểm tra chứng chỉ và log lại time:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/98770f59-3a63-426e-9f6f-cc2216f35de9" />
+
+==> Kết luận bài: Đã kiểm tra và đáp ứng đủ các yêu cầu chữ kí, còn thiếu phần: Metadata (/M, /SubFilter) và DSS / DocTimeStamp 
+
