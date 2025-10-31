@@ -1,0 +1,13 @@
+🔍 Kiểm tra chữ ký PDF: signed_output.pdf
+✅ Đã tìm thấy chữ ký, ByteRange=[0, 131311, 154611, 893]
+✅ PKCS#7 hợp lệ, có 1 certificate.
+   Người ký: Common Name: NGUYENTUANANH, Organization: Me, Locality: ThaiNguyen, State/Province: ThaiNguyen, Country: VN
+   SHA256(ByteRange) = f8ee58f83ea5b47e770999a5f3a97cdab9251e4dbf3530d98cc05b3599a1823b
+   messageDigest     = f8ee58f83ea5b47e770999a5f3a97cdab9251e4dbf3530d98cc05b3599a1823b
+✅ messageDigest khớp dữ liệu PDF
+❌ Lỗi xác minh chữ ký: Could not deserialize key data. The data may be in an incorrect format, it may be encrypted with an unsupported algorithm, or it may be an unsupported key type (e.g. EC curves with explicit parameters). Details: ASN.1 parsing error: unexpected tag (got Tag { value: 0, constructed: true, class: ContextSpecific })
+⚠️ Lỗi kiểm tra chain: The X.509 certificate provided is self-signed - "Common Name: NGUYENTUANANH, Organization: Me, Locality: ThaiNguyen, State/Province: ThaiNguyen, Country: VN"
+ℹ️ Không có timestamp trong chữ ký.
+⚠️ File đã bị thay đổi (size=155504, covered=132204)
+
+🎯 Hoàn tất kiểm tra chữ ký PDF.
